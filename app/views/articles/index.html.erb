@@ -1,5 +1,7 @@
 <h1>Articles</h1>
 
+Out blog has <%= Article.public_count %> articles and counting!
+
 <ul> 
     <% @articles.each do |article| %>
         <li>
@@ -7,4 +9,6 @@
         </l1>
     <% end %>
 </ul>
+
+<%= link_to "New Article", new_article_path %>
 
